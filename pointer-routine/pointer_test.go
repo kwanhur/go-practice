@@ -4,6 +4,7 @@ import (
 	"testing"
 	"unsafe"
 	"time"
+	"syscall"
 )
 
 func TestForRoutine(t *testing.T) {
@@ -19,4 +20,8 @@ func TestForRoutine(t *testing.T) {
 	}
 
 	time.Sleep(1 * time.Second)
+}
+
+func TestGid(t *testing.T) {
+	t.Log(syscall.Getgid())
 }
