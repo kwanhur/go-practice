@@ -46,3 +46,13 @@ func ParseStudent() {
 	}
 	fmt.Printf("m rectify: %+v\n", m)
 }
+
+func UpdateName(stus []Student) {
+	for i, stu := range stus {
+		stu.Name = fmt.Sprintf("kwanhur_%d", i)
+		fmt.Println(stu.Name)
+	}
+	for _, stu := range stus {
+		fmt.Println(stu.Name)
+	}
+}
