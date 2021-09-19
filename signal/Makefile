@@ -4,7 +4,7 @@
 BUILD_FILE=main.go
 
 # compile build result
-TARGET_NAME=sched
+TARGET_NAME=confd
 
 # support OS
 # mac os "darwin"
